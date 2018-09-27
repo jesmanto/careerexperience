@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Company Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="http://webthemez.com" />
+<!-- css -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet"> 
+<link href="css/flexslider.css" rel="stylesheet" /> 
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/form_style.css" rel="stylesheet" />
+<link href="css/navbar-fixed.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="form_style.css">
+</head>
+<body>
+    
+    <div class="topbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"> 	  
+        <p class="pull-left hidden-xs"><i class="fa fa-clock-o"></i><span>Mon - Sat 8.00 - 18.00. Sunday CLOSED</span></p>
+        <p class="pull-right"><i class="fa fa-phone"></i>Tel No. (+234) 810-6243-542</p>
+      </div>
+    </div>
+  </div>
+</div>
+	<!-- start header -->
+	<header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="img/clogo.png" alt="logo"/></a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav navbar-right">
+<!--                        <li><a href="#" data-toggle="modal" data-target="#user-login"><i class="fa fa-user" title="Login"></i> login</a></li>-->
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li> 
+						 <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">About Us <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">Company</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">News</a></li> 
+                            <li><a href="#">Investors</a></li>
+                        </ul>
+                    </li> 
+						<li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="pricing.html">Go Pro</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</header>
+
+    
+  <div class="container">
+    <div class="header row">
+  	 <h2>Register</h2>
+    </div>
+
+    <div class="row">
+  <form method="post" action="companySignup.php" class="gradLogin form-vertical" role="form">
+  	<div class="form-group">
+  	  <label for="name">Company Name</label>
+  	  <input type="text" name="Name" class="form-control" id="name">
+  	</div>
+  	
+    <div class="form-group">
+  	  <label for="website">Company Website</label>
+  	  <input type="text" class="form-control" id="website" name="Website">
+  	</div>
+    <div class="form-group">
+  	  <label for="email">Company Email</label>
+  	  <input class="form-control" id="email" type="email" name="Email">
+  	</div>
+    <div class="form-group">
+  	  <label for="phone">Company Phone No</label>
+  	  <input class="form-control" id="phone" type="text" name="Phone">
+  	</div>
+    <div class="form-group">
+  	  <label for="address" >Company Address</label>
+  	  <input class="form-control" type="text" name="Address" id="address">
+  	</div>
+    <div class="form-group">
+  	  <label>Is Your Company Registered with CAC?</label>
+  	  <label class="radio-inline"><input type="radio" name="CAC">Yes</label>
+    <label class="radio-inline"><input type="radio" name="CAC">No</label>
+        
+  	</div>
+    <div class="form-group">
+  	  <label for="cac_reg">If Yes, CAC Reg No</label>
+  	  <input type="text" class="form-control" name="CAC_Reg" id="cac_reg">
+  	</div>
+    <div class="form-group">
+  	  <label for="sector">Sector</label>
+  	  <input type="text" class="form-control" id="sector" name="Sector">
+  	</div>
+  	<div class="form-group">
+  	  <label for="password">Password</label>
+  	  <input class="form-control" id="password" type="password" name="Password">
+  	</div>
+  	<div class="form-group">
+  	  <label for="password2">Confirm password</label>
+  	  <input type="password" name="Password2" class="form-control" id="password2">
+  	</div>
+  	<div class="form-group">
+  	  <button type="submit" class="btn" name="company_reg">Partner With Us</button>
+  	</div>
+  	<h5>
+  		Already a partner? <a href="companyLogin.php">Sign in</a>
+  	</h5>
+  </form>
+</div>
+</div>
+    <footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-3">
+				<div class="widget">
+					<h5 class="widgetheading">Our Contact</h5>
+					<address>
+					<strong>Table 5, SHA cohort 7</strong><br>
+					64, Kudirat Abiola Way, Oregun,<br>
+					 Ikeja, Lagos, Nigeria.</address>
+					<p>
+						<i class="icon-phone"></i> (+234) 810-6243-542 <br>
+						<i class="icon-envelope-alt"></i> admin@careerexperience.ng
+					</p>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<div class="widget">
+					<h5 class="widgetheading">Quick Links</h5>
+					<ul class="link-list">
+						<li><a href="#">Latest Events</a></li>
+						<li><a href="#">Terms and conditions</a></li>
+						<li><a href="#">Privacy policy</a></li>
+						<li><a href="#">Career</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<div class="widget">
+					<h5 class="widgetheading">Latest posts</h5>
+					<ul class="link-list">
+						<li><a href="#">Our client, an IT firm, is in need of a digta...</a></li>
+						<li><a href="#">SEMINAR! SEMINAR!! SEMINAR!!!</a></li>
+						<li><a href="#">How to sell yourself through social media...</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3">
+					<div class="widget">
+					<h5 class="widgetheading">Recent News</h5>
+					<ul class="link-list">
+						<li><a href="#">NLC commences her 3-days warning strike on today.</a></li>
+						<li><a href="#">She Hacks Bootcamp for cohort 7 ends on Friday, 28-09-2018</a></li>
+						<li><a href="#">Give us another chance to change the education sector - APC</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="copyright">
+						<p>
+							<span>&copy; www.careerexperience.ng All right reserved. Website By </span><a href="#" target="_blank">The Illuminant</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<ul class="social-network">
+						<li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</footer>
+</body>
+</html>
