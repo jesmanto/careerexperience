@@ -27,7 +27,7 @@
   </div>
 </div>
 	<!-- start header -->
-	<header>
+	<header id="myheader">
         <div class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -48,13 +48,13 @@
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle">About Us <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="about.html">Company</a></li>
-                            <li><a href="#">Our Team</a></li>
+                            <li><a href="about.html#team">Our Team</a></li>
                             <li><a href="#">News</a></li> 
                             <li><a href="#">Investors</a></li>
                         </ul>
                     </li> 
 						<li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="portfolio.html">career</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="pricing.html">Go Pro</a></li>>
                     </ul>
@@ -63,27 +63,32 @@
         </div>
 	</header>
 
-    
-  <div class="header" style="width:50%;">
+    <div class="container">
+        <div class="row">
+            <div class="header" style="width:50%;">
   	<h2>Company Login</h2>
   </div>
 	 
-  <form class="gradLogin" style="width:50%;">
-  	<div class="input-group">
+  <form class="gradLogin">
+  	<div class="form-group">
   		<label>Company Email</label>
-  		<input type="email" name="Email" >
+  		<input type="email" name="Email" class="form-control" placeholder="Company Email">
   	</div>
-  	<div class="input-group">
+  	<div class="form-group">
   		<label>Password</label>
-  		<input type="password" name="Password">
+  		<input type="password" name="Password" class="form-control" placeholder="Password">
   	</div>
-  	<div class="input-group">
+  	<div class="form-group">
   		<button type="submit" class="btn" name="company_login">Login</button>
   	</div>
   	<p>
   		Not yet a member? <a href="companySignup.html">Join Us Today</a>
   	</p>
   </form>
+        </div>
+        
+    </div>
+  
     <footer>
 	<div class="container">
 		<div class="row">
@@ -157,5 +162,20 @@
 		</div>
 	</div>
 	</footer>
+    <script src="jquery.js"></script>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="jquery.easing.1.3.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="jquery.fancybox.pack.js"></script>
+<script src="jquery.fancybox-media.js"></script>  
+<script src="jquery.flexslider.js"></script>
+<script src="animate.js"></script>
+<!-- Vendor Scripts -->
+<script src="modernizr.custom.js"></script>
+<script src="jquery.isotope.min.js"></script>
+<script src="jquery.magnific-popup.min.js"></script>
+<script src="animate.js"></script>
+<script src="custom.js"></script>
+<script src="navbar-fixed.js"></script>
 </body>
 </html>

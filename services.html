@@ -7,11 +7,14 @@
 <meta name="description" content="" />
 <meta name="author" content="http://webthemez.com" />
  
+<!--<link href="bootstrap.min.css" rel="stylesheet" />-->
 <link href="bootstrap.min.css" rel="stylesheet" />
 <link href="jquery.fancybox.css" rel="stylesheet"> 
-<link href="flexslider.css" rel="stylesheet" />
+<link href="flexslider.css" rel="stylesheet" /> 
 <link href="style.css" rel="stylesheet" />
+<link href="form_style.css" rel="stylesheet" />
 <link href="navbar-fixed.css" rel="stylesheet" />
+<link href="font-awesome.css" rel="stylesheet" />
  
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -25,14 +28,14 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <p class="pull-left hidden-xs">We are Hiring!!</p>
-        <p class="pull-right"><i class="fa fa-phone"></i>Tel No. (+001) 123-456-789</p>
+        <p class="pull-left hidden-xs"><i class="fa fa-clock-o"></i><span>Mon - Sat 8.00 - 18.00. Sunday CLOSED</span></p>
+        <p class="pull-right"><i class="fa fa-phone"></i>Tel No. (+234) 810-6243-542</p>
       </div>
     </div>
   </div>
 </div>
 	<!-- start header -->
-		<header>
+		<header id="myheader">
         <div class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -50,13 +53,13 @@
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle">About Us <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="about.html">Company</a></li>
-                            <li><a href="#">Our Team</a></li>
+                            <li><a href="about.html#team">Our Team</a></li>
                             <li><a href="#">News</a></li> 
                             <li><a href="#">Investors</a></li>
                         </ul>
-                    </li> 
+                    </li>
 						<li class="active"><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="portfolio.html">career</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="pricing.html">Go Pro</a></li>
                     </ul>
@@ -107,6 +110,7 @@
 							</div>
 						</div>
 						 
+<!--
 						 			<div class="row">
 		<div class="skill-home"> <div class="skill-home-solid clearfix"> 
 		<div class="col-md-3 text-center">
@@ -127,27 +131,28 @@
 		</div></div>
 		</div></div>
 		</div> 
+-->
 						    <!-- Info Blcoks -->
         <div class="row">
             <div class="col-sm-4 info-blocks">
                 <i class="icon-info-blocks fa fa-bell-o"></i>
                 <div class="info-blocks-in">
-                    <h3>Awesome Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+                    <h3>Graduates</h3>
+                    <p>Are you a graduate? Completed NYSC? and currently looking for job? You are at the right place, so RELAX and <a href="register.html">introduce yourself</a>.</p>
                 </div>
             </div>
             <div class="col-sm-4 info-blocks">
                 <i class="icon-info-blocks fa fa-hdd-o"></i>
                 <div class="info-blocks-in">
-                    <h3>FontAwesome</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+                    <h3>Undergraduates</h3>
+                    <p>Undergraduates on Industrial Training need not worry about placement. We will fix it. <strong>Coming soon!!!</strong></p>
                 </div>
             </div>
             <div class="col-sm-4 info-blocks">
                 <i class="icon-info-blocks fa fa-lightbulb-o"></i>
                 <div class="info-blocks-in">
-                    <h3>Bootstrap</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+                    <h3>Internships</h3>
+                    <p>One of the ways of getting job experience is through internships. We offer our users a guaranteed internship positions in companies related to their field of study.</p>
                 </div>
             </div>
         </div>
@@ -159,26 +164,28 @@
             <div class="col-sm-4 info-blocks">
                 <i class="icon-info-blocks fa fa-code"></i>
                 <div class="info-blocks-in">
-                    <h3>SEO Ready</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+                    <h3>Outsourcing</h3>
+                    <p>Get the right candidates for your job positions by <a href="companySignup.html">consulting with us today</a>. Our archive is loaded with qualified graduates.</p>
                 </div>
+<!--                </div>-->
             </div>
             <div class="col-sm-4 info-blocks">
                 <i class="icon-info-blocks fa fa-compress"></i>
                 <div class="info-blocks-in">
-                    <h3>Fully Responsive</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+                    <h3>Networking</h3>
+                    <p>We create a networking platform for job seekers and companies of various sectors to reach out and network.</p>
                 </div>
             </div>
             <div class="col-sm-4 info-blocks">
                 <i class="icon-info-blocks fa fa-html5"></i>
                 <div class="info-blocks-in">
-                    <h3>CSS3 + HTML5</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+                    <h3>24/7 Support</h3>
+                    <p>Our call lines and customer service agents are always available. You are covered.</p>
                 </div>
             </div>
         </div>
         <!-- End Info Blcoks -->
+<!--
         <div class="row service-v1 margin-bottom-40">
             <div class="col-md-4 md-margin-bottom-40">
                <img class="img-responsive" src="img/service1.jpg" alt="">   
@@ -196,6 +203,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus</p>        
             </div>
         </div>
+-->
         <!-- End Service Blcoks -->
  
      
@@ -282,6 +290,7 @@
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="jquery.js"></script>
+<script src="jquery-3.3.1.min.js"></script>
 <script src="jquery.easing.1.3.js"></script>
 <script src="bootstrap.min.js"></script>
 <script src="jquery.fancybox.pack.js"></script>

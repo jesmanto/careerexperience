@@ -10,9 +10,9 @@
 <link href="jquery.fancybox.css" rel="stylesheet"> 
 <link href="flexslider.css" rel="stylesheet" /> 
 <link href="style.css" rel="stylesheet" />
-<!--<link href="form_style.css" rel="stylesheet" />-->
+<link href="form_style.css" rel="stylesheet" />
 <link href="navbar-fixed.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="form_style.css">
+<link href="font-awesome.css" rel="stylesheet" />
 </head>
 <body>
     
@@ -27,7 +27,7 @@
   </div>
 </div>
 	<!-- start header -->
-	<header>
+	<header id="myheader">
         <div class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -48,13 +48,13 @@
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle">About Us <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="about.html">Company</a></li>
-                            <li><a href="#">Our Team</a></li>
+                            <li><a href="about.html#team">Our Team</a></li>
                             <li><a href="#">News</a></li> 
                             <li><a href="#">Investors</a></li>
                         </ul>
                     </li> 
 						<li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="portfolio.html">Career</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="pricing.html">Go Pro</a></li>
                     </ul>
@@ -63,36 +63,41 @@
         </div>
 	</header>
 
-    
-    <div class="header" style="width:50%;">
+    <div class="container">
+        <div class="row">
+            <div class="header" style="width:50%;">
   	<h2>Register</h2>
   </div>
 	
-  <form style="width:50%;" class="gradLogin">
+  <form class="gradLogin">
   	
-  	<div class="input-group">
+  	<div class="form-group">
   	  <label>Username</label>
-  	  <input type="text" name="username">
+  	  <input type="text" name="username" class="form-control">
   	</div>
-  	<div class="input-group">
+  	<div class="form-group">
   	  <label>Email</label>
-  	  <input type="email" name="email">
+  	  <input type="email" name="email" class="form-control">
   	</div>
-  	<div class="input-group">
+  	<div class="form-group">
   	  <label>Password</label>
-  	  <input type="password" name="password_1">
+  	  <input type="password" name="password_1" class="form-control">
   	</div>
-  	<div class="input-group">
+  	<div class="form-group">
   	  <label>Confirm password</label>
-  	  <input type="password" name="password_2">
+  	  <input type="password" name="password_2" class="form-control">
   	</div>
-  	<div class="input-group">
+  	<div class="form-group">
   	  <button type="submit" class="btn" name="reg_user">Register</button>
   	</div>
   	<p>
   		Already a member? <a href="login.html">Sign in</a>
   	</p>
   </form>
+        </div>
+    
+        </div>
+    
     <footer>
 	<div class="container">
 		<div class="row">
@@ -166,5 +171,20 @@
 		</div>
 	</div>
 	</footer>
+    <script src="jquery.js"></script>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="jquery.easing.1.3.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="jquery.fancybox.pack.js"></script>
+<script src="jquery.fancybox-media.js"></script>  
+<script src="jquery.flexslider.js"></script>
+<script src="animate.js"></script>
+<!-- Vendor Scripts -->
+<script src="modernizr.custom.js"></script>
+<script src="jquery.isotope.min.js"></script>
+<script src="jquery.magnific-popup.min.js"></script>
+<script src="animate.js"></script>
+<script src="custom.js"></script>
+<script src="navbar-fixed.js"></script>
 </body>
 </html>
