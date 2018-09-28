@@ -79,6 +79,18 @@
   	  <label>Email</label>
   	  <input type="email" name="email" class="form-control">
   	</div>
+    <div class="form-group">
+  	  <label>Highest Level of Qualification</label>
+  	  <input type="email" name="email" class="form-control" placeholder="SSCE, OND/HND, Degree.. etc">
+  	</div>
+     <div class="form-group">
+  	  <label>Class of Honors</label>
+  	  <input type="email" name="email" class="form-control" placeholder="First class/Distinction, Upper Division etc">
+  	</div>
+      <div class="form-group">
+  	  <label>Career Interest</label>
+  	  <input type="email" name="email" class="form-control" placeholder="IT, Finance, Engineering ,etc">
+  	</div>
   	<div class="form-group">
   	  <label>Password</label>
   	  <input type="password" name="password_1" class="form-control">
@@ -88,16 +100,37 @@
   	  <input type="password" name="password_2" class="form-control">
   	</div>
   	<div class="form-group">
-  	  <button type="submit" class="btn" name="reg_user">Register</button>
+        <a href="success.html"><button class="btn" name="reg_user">Register</button> </a>
   	</div>
   	<p>
   		Already a member? <a href="login.html">Sign in</a>
   	</p>
   </form>
-        </div>
     
         </div>
     
+        </div>
+    
+    <div class="modal fade" id="loginModal" role="dialog" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style="position:absolute;top:10px;right:10px;">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body choose">
+                    <p style="color: darkgreen;font-weight: 500;">Congratulations!!! You are now a registered member</p>
+                </div>
+<!--
+                <div class="modal-footer">
+                    <h6>Don't have an account with us?<a href=""> Sign Up for Free</a></h6>
+                </div>
+-->
+            </div>
+        </div>
+    </div>
     <footer>
 	<div class="container">
 		<div class="row">

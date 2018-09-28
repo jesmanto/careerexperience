@@ -8,13 +8,12 @@
 <!--<meta name="author" content="http://webthemez.com" />-->
 <!-- css -->
 <link href="bootstrap.min.css" rel="stylesheet" />
-<link href="bootstrap-theme.min.css" rel="stylesheet" />
 <link href="jquery.fancybox.css" rel="stylesheet"> 
 <link href="flexslider.css" rel="stylesheet" /> 
 <link href="style.css" rel="stylesheet" />
 <link href="form_style.css" rel="stylesheet" />
 <link href="navbar-fixed.css" rel="stylesheet" />
-<link href="font-awesome.min.css" rel="stylesheet" />
+<link href="font-awesome.css" rel="stylesheet" />
     
     
     <style>
@@ -50,7 +49,7 @@
   </div>
 </div>
 	<!-- start header -->
-	<header  id="myheader">
+	<header>
         <div class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -63,7 +62,17 @@
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" data-toggle="modal" data-target="#loginModal"><i class="fa fa-user" title="Login"></i> login</a></li>
+                        <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">User <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html"><strong style="color: darkred">Logout</strong></a></li>
+<!--
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">News</a></li> 
+                            <li><a href="#">Investors</a></li>
+-->
+                        </ul>
+                    </li>
                     </ul>
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html">Home</a></li> 
@@ -71,8 +80,8 @@
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle">About Us <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="about.html">Company</a></li>
-                            <li><a href="about.html#team">Our Team</a></li>
-                            <li><a href="about.html#mission">Why Us?</a></li> 
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">News</a></li> 
                             <li><a href="#">Investors</a></li>
                         </ul>
                     </li> 
@@ -193,49 +202,16 @@
         </div>
     </div>
     
-	<section id="banner">
-	 
-	<!-- Slider -->
-        <div id="main-slider" class="flexslider">
-            <ul class="slides">
-              <li>
-                <img src="1.jpg" alt="" />
-                <div class="flex-caption">
-                    <h3>Creative</h3> 
-					<p>We create the opportunities</p> 
-					 
-                </div>
-              </li>
-              <li>
-                <img src="2.jpg" alt="" />
-                <div class="flex-caption">
-                    <h3>Hands-On-Training</h3> 
-					<p>Success depends on work</p> 	 
-                </div>
-              </li>
-            </ul>
-        </div>
-	<!-- end slider -->
- 
-	</section> 
-	<section id="call-to-action-2">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-10 col-sm-9">
-					<h3>Intern For a Company</h3>
-					<h5 style="color: aliceblue">Get the experienece for your dream job through internship...</h5>
-				</div>
-				<div class="col-md-2 col-sm-3">
-					<a href="#page" class="btn btn-primary" style="background-color: aliceblue">Read More</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="content">
+	<div class="container">
+        
+        <section id="content">
 	
 	
 	<div class="container">
+        <div class="row">
+            <h2 style="color: forestgreen;">Congratulations!!! <br>Your are now a registered member.</h2>
+        </div>
+<!--
 	    	<div class="row">
 			<div class="col-md-12">
 				<div class="aligncenter" id="page"><h2 class="aligncenter">Our Services</h2>We offer a wide range of services to suite the need of our partners. We also provide suitable services for our graduate users. See below for a list of services we offer.</div>
@@ -289,220 +265,11 @@
                 </div>
             </div>
         </div>
+-->
 	</div>
 	</section>
-	
-	<section class="section-padding gray-bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-title text-center">
-						<h2>Our Organization</h2>
-						<p>Our organization is made up of great minds with the same goal and purpose.<br>We have gained expertise in our different fields. I bet you are in safe ahnds with us.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-sm-6">
-					<div class="about-text">
-						<p>Our goal and purpose is to provide millions of youth in Nigeria and beyond with employment skills to lift themselves out of poverty and contribute to their societies positively.</p> <p>The following is our 4-step process of providing internships: </p>
-
-						<ul class="withArrow">
-							<li><span class="fa fa-angle-right"></span> Fill the online registration form</li>
-							<li><span class="fa fa-angle-right"></span> One-on-one interview session with Career Experince</li>
-							<li><span class="fa fa-angle-right"></span> If successful, you will receive a mail after 48hrs</li>
-							<li><span class="fa fa-angle-right"></span> Get connected to a company for an internship position</li>
-						</ul>
-						<a href="register.html" class="btn btn-primary">Apply now</a>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6">
-					<div class="about-image">
-						<img src="company.jpg" alt="About Images">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>	  
-	
-	
-	<div class="about home-about">
-				<div class="container">
-						
-						<div class="row">
-							<div class="col-md-4">
-								<!-- Heading and para -->
-								<div class="block-heading-two">
-									<div class="block-heading-two">
-									<h3><span>Programmes</span></h3>
-								</div>
-                                    <div class="panel-group" id="accordion-alt3">
-								 <!-- Panel. Use "panel-XXX" class for different colors. Replace "XXX" with color. -->
-								  <div class="panel">	
-									<!-- Panel heading -->
-									 <div class="panel-heading">
-										<h4 class="panel-title">
-										  <a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapse1-alt3">
-											<i class="fa fa-angle-right"></i> Employability Seminars
-										  </a>
-										</h4>
-									 </div>
-									 <div id="collapse1-alt3" class="panel-collapse collapse">
-										<!-- Panel body -->
-										<div class="panel-body">
-										  
-										</div>
-									 </div>
-								  </div>
-								  <div class="panel">
-									 <div class="panel-heading">
-										<h4 class="panel-title">
-										  <a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapse2-alt3">
-											<i class="fa fa-angle-right"></i> CV Tailoring
-										  </a>
-										</h4>
-									 </div>
-									 <div id="collapse2-alt3" class="panel-collapse collapse">
-										<div class="panel-body">
-										  
-										</div>
-									 </div>
-								  </div>
-								  <div class="panel">
-<!--
-									 <div class="panel-heading">
-										<h4 class="panel-title">
-										  <a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseThree-alt3">
-											<i class="fa fa-angle-right"></i> Give Us Another Chance - APC
-										  </a>
-										</h4>
-									 </div>
-									 <div id="collapseThree-alt3" class="panel-collapse collapse">
-										<div class="panel-body">
-										  APC's flag bearer, Buhara, seeks a re-election after dashing the hopes of the poor masses. Let's watchand see sha.
-										</div>
-									 </div>
--->
-								  </div>
-								  <div class="panel">
-									 <div class="panel-heading">
-										<h4 class="panel-title">
-										  <a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapse4-alt3">
-											<i class="fa fa-angle-right"></i> More programmes to come your way soon..
-										  </a>
-										</h4>
-									 </div>
-									 <div id="collapse4-alt3" class="panel-collapse collapse">
-										<div class="panel-body">
-										  
-										</div>
-									 </div>
-								  </div>
-								</div>
-                                    
-								</div>
-								<p>
-                                    
-                                </p>
-							</div>
-							<div class="col-md-4">
-								<div class="block-heading-two">
-									<h3><span>Latest News</span></h3>
-								</div>		
-								<!-- Accordion starts -->
-								<div class="panel-group" id="accordion-alt3">
-								 <!-- Panel. Use "panel-XXX" class for different colors. Replace "XXX" with color. -->
-								  <div class="panel">	
-									<!-- Panel heading -->
-									 <div class="panel-heading">
-										<h4 class="panel-title">
-										  <a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseOne-alt3">
-											<i class="fa fa-angle-right"></i> NLC commences her 3-day warning strike
-										  </a>
-										</h4>
-									 </div>
-									 <div id="collapseOne-alt3" class="panel-collapse collapse">
-										<!-- Panel body -->
-										<div class="panel-body">
-										  After much delibrations and threats, NLC finally decides to commence the strike. What a blow to the economy of the nation.
-										</div>
-									 </div>
-								  </div>
-								  <div class="panel">
-									 <div class="panel-heading">
-										<h4 class="panel-title">
-										  <a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseTwo-alt3">
-											<i class="fa fa-angle-right"></i> SHA Bootcamp cohort 7 Draws the Curtain
-										  </a>
-										</h4>
-									 </div>
-									 <div id="collapseTwo-alt3" class="panel-collapse collapse">
-										<div class="panel-body">
-										  The SHA bootcamp cohort 7, after a 1-month intensive training prepares to end the cohort on 28/09/2018
-										</div>
-									 </div>
-								  </div>
-								  <div class="panel">
-									 <div class="panel-heading">
-										<h4 class="panel-title">
-										  <a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseThree-alt3">
-											<i class="fa fa-angle-right"></i> Give Us Another Chance - APC
-										  </a>
-										</h4>
-									 </div>
-									 <div id="collapseThree-alt3" class="panel-collapse collapse">
-										<div class="panel-body">
-										  APC's flag bearer, Buhari, seeks a re-election after dashing the hopes of the poor masses. Let's watchand see sha.
-										</div>
-									 </div>
-								  </div>
-								  <div class="panel">
-									 <div class="panel-heading">
-										<h4 class="panel-title">
-										  <a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseFour-alt3">
-											<i class="fa fa-angle-right"></i> More news to come your way soon..
-										  </a>
-										</h4>
-									 </div>
-									 <div id="collapseFour-alt3" class="panel-collapse collapse">
-										<div class="panel-body">
-										  
-										</div>
-									 </div>
-								  </div>
-								</div>
-								<!-- Accordion ends -->
-								
-							</div>
-							
-							<div class="col-md-4">
-								<div class="block-heading-two">
-									<h3><span>Testimonials</span></h3>
-								</div>	
-								     <div class="testimonials">
-										<div class="active item">
-										  <blockquote><p>Ever since I discovered this platform, I have never lacked qualified candidates for my job positions.</p></blockquote>
-										  <div class="carousel-info">
-											<img alt="" src="team2.jpg" class="pull-left">
-											<div class="pull-left">
-											  <span class="testimonials-name">Jamiu Okoye</span>
-											  <span class="testimonials-post">Managing Director</span>
-											</div>
-										  </div>
-										</div>
-									</div>
-							</div>
-							
-						</div>
-						
-						 						
-						 
-						<br>
-					 
-					  </div>
-						
-					</div>
-					
+        
+    </div>				
 					
 
 	<footer>
